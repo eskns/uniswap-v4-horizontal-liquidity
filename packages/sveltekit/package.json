@@ -29,7 +29,7 @@
 		"eslint": "^8.50.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"@skbweb3-1/foundry": "workspace:*",
+		"@web3skeb-1/foundry": "workspace:*",
 		"postcss": "^8.4.31",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^3.0.3",

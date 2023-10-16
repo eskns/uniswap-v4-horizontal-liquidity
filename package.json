@@ -14,10 +14,10 @@
     "dev": "pnpm --filter=./packages/sveltekit dev"
   },
   "dependencies": {
-    "@skbweb3-1/out": "file:./packages/foundry/out",
+    "@web3skeb-1/out": "file:./packages/foundry/out",
     "ethers": "^6.7.1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Beddhu Murali",
+  "license": "MIT"
 }
