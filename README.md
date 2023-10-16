@@ -3,7 +3,6 @@ Universal web app with traditional and blockchain based backends
 After cloning the repo do the following:
 
 ```
-mkdir -p ./packages/foundry/out
 pnpm install
 pnpm foundry:install
 pnpm forge:init
