@@ -5,8 +5,8 @@ After cloning the repo do the following:
 ```
 pnpm install
 pnpm foundry:install
-pnpm forge init
-pnpm forge build
+pnpm forge:init
+pnpm forge:build
 pnpm anvil
 ```
 In a separate window:
