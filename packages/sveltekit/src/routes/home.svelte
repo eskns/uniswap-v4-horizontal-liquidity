@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import {Counter__factory} from '@skbweb3-1/foundry'
+	import {Counter__factory} from '@web3skeb-1/foundry'
     import { ethers } from 'ethers'
 
     let provider: ethers.BrowserProvider | ethers.JsonRpcApiProvider | null;
