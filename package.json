@@ -8,6 +8,7 @@
     "foundry:install": "pnpm --filter=./packages/foundry install",
     "forge:init": "pnpm --filter=./packages/foundry forge_init",
     "forge:build": "pnpm --filter=./packages/foundry build",
+    "forge:createCounter": "pnpm --filter=./packages/foundry createCounter",
     "forge:test": "pnpm --filter=./packages/foundry test",
     "anvil": "pnpm --filter=./packages/foundry anvil",
     "dev": "pnpm --filter=./packages/sveltekit dev"
