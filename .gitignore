@@ -128,3 +128,18 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# pnpm
+pnpm-lock.yaml
+
+# foundry
+packages/foundry/out
+packages/foundry/dist
+packages/foundry/cache
+
+# sveltekit
+packages/sveltekit/.eslint*
+packages/sveltekit/.npmrc
+packages/sveltekit/.prettier*
+packages/sveltekit/prisma/migrations
+packages/sveltekit/prisma/*.sqlite

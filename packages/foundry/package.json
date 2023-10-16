@@ -1,0 +1,28 @@
+{
+  "name": "@web3skeb-1/foundry-1",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.ts",
+  "module": "./dist/index.ts",
+  "private": true,
+  "scripts": {
+    "foundry_install": "curl -L https://foundry.paradigm.xyz | bash",
+    "forge_init": "forge init --force && cp contracts/* src && rm -rf contracts",
+    "build": "forge build && pnpm buildjs",
+    "createCounter": "forge create --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 src/Counter.sol:Counter",
+    "test": "forge test",
+    "anvil": "anvil ",
+    "buildjs": "rm -rf dist && node index.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@typechain/ethers-v6": "^0.5.0",
+    "typechain": "^8.3.1"
+  }
+}
