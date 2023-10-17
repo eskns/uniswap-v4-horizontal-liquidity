@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "foundry:install": "pnpm --filter=./packages/foundry install",
-    "forge:init": "pnpm --filter=./packages/foundry forge_init",
-    "forge:build": "pnpm --filter=./packages/foundry build",
-    "forge:createCounter": "pnpm --filter=./packages/foundry createCounter",
-    "forge:test": "pnpm --filter=./packages/foundry test",
-    "anvil": "pnpm --filter=./packages/foundry anvil",
-    "dev": "pnpm --filter=./packages/sveltekit dev"
+    "foundry:install": "pnpm --filter=@web3skeb-1/foundry install",
+    "forge:init": "pnpm --filter=@web3skeb-1/foundry forge_init",
+    "forge:build": "pnpm --filter=@web3skeb-1/foundry build",
+    "forge:createCounter": "pnpm --filter=@web3skeb-1/foundry createCounter",
+    "forge:test": "pnpm --filter=@web3skeb-1/foundry test",
+    "anvil": "pnpm --filter=@web3skeb-1/foundry anvil",
+    "db:init": "pnpm --filter=@web3skeb-1/sveltekit db:init",
+    "dev": "pnpm --filter=@web3skeb-1/sveltekit dev"
   },
   "dependencies": {
     "@web3skeb-1/out": "file:./packages/foundry/out",

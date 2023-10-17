@@ -48,8 +48,8 @@ const getNumber = async () => {
 		}
 		const signer = await provider.getSigner()
 		const counter = Counter__factory.connect(CONTRACT_ADDRESS, signer)
-		await counter.increment()
-		await getNumber()
+		await counter.increment().then(() => getNumber())
+		// await getNumber()
 		}
 		
 		const getArray = async () => {

@@ -23,6 +23,7 @@ packages/sveltekit/src/routes/home.svelte.
 Then, in a seperate window:
 
 ```
+pnpm db:init
 pnpm dev
 ```
 
