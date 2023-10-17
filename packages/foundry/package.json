@@ -12,7 +12,7 @@
     "build": "forge build && pnpm buildjs",
     "createCounter": "forge create --rpc-url http://127.0.0.1:8545 --private-key <add private key from anvil output> src/Counter.sol:Counter",
     "test": "forge test",
-    "anvil": "anvil ",
+    "anvil": "anvil --chain-id 1337",
     "buildjs": "rm -rf dist && node index.js "
   },
   "keywords": [],
