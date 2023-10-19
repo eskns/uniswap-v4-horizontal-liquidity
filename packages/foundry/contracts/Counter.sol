@@ -15,6 +15,7 @@ contract Counter {
     }
 
     function getArray() public view returns(string[] memory) {
+        number = number % my_array.length;
         string[] memory arr = new string[](number);
         for(uint i = 0; i < number; i++) {
             arr[i] = my_array[i];
