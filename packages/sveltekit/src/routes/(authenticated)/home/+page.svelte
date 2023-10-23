@@ -11,7 +11,7 @@
 	let number: string = "";
 	let array: string[] = [];
 	const CONTRACT_URL = 'http://127.0.0.1:8545'; //anvil url
-	const CONTRACT_ADDRESS = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0'
+	const CONTRACT_ADDRESS = '0x...' // copy contract address from the output of pnpm forge:createCounter to here
 
     const handleConnectWallet = async () => {
         // ethers.BrowserProvider is a provider for state changes. It will trigger MetaMask
