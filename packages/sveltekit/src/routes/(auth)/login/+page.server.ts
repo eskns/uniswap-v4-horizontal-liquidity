@@ -8,7 +8,7 @@ import { authSchema } from '$lib/zod/schema'
 export async function load({ locals }) {
 	const session = await locals.auth.validate()
 
-	if (session) throw redirect(302, '/')
+	if (session) throw redirect(302, '/home')
 
 	const form = await superValidate(authSchema)
 	return { form }
@@ -39,5 +39,6 @@ export const actions = {
 		} catch (error) {
 			return setError(form, 'username', 'Invalid credentials')
 		}
+		throw redirect(302, '/home')
 	},
 }

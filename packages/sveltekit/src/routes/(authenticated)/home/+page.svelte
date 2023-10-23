@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { page } from '$app/stores'
 	import {Counter__factory} from '@web3skeb-1/foundry'
     import { ethers } from 'ethers'
+	import Default from '../../default.svelte'
+
+	export let data
 
     let provider: ethers.BrowserProvider | ethers.JsonRpcApiProvider | null;
-		let signer: ethers.JsonRpcSigner;
-		let address: string;
-		let number: string = "";
-		let array: string[] = [];
-		const CONTRACT_URL = 'http://127.0.0.1:8545'; //anvil url
-		const CONTRACT_ADDRESS = '0x...' //copy contract address from anvil output to here
-
-    $: user = $page.data.user
+	let signer: ethers.JsonRpcSigner;
+	let address: string;
+	let number: string = "";
+	let array: string[] = [];
+	const CONTRACT_URL = 'http://127.0.0.1:8545'; //anvil url
+	const CONTRACT_ADDRESS = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0'
 
     const handleConnectWallet = async () => {
         // ethers.BrowserProvider is a provider for state changes. It will trigger MetaMask
@@ -63,16 +63,22 @@ const getNumber = async () => {
 	}
 </script>
 
-<div class="mt-16 grid justify-items-center text-center">
-{#if number}
-	<span> Number: {number} </span>
-{/if}
-{#each array as item}
-<span>{item}</span>
-{/each}
-<button class="justify-self-right" on:click={handleConnectWallet} > Connect </button>
-<button class="justify-self-right" on:click={getNumber} > Get Number </button>
-<button class="justify-self-right" on:click={handleIncrement} > Increment Number </button>
-<button class="justify-self-right" on:click={handleGetArray} > Get Array </button>
-
-</div>	
+<div class="p-4">
+	<h1>Home</h1>
+	<p class="mt-4 capitalize">Welcome, {data.user.username}!</p>
+	<div class="mt-16 grid justify-items-center text-center">
+		{#if number}
+			<span> Number: {number} </span>
+		{/if}
+		{#each array as item}
+		<span>{item}</span>
+		{/each}
+		<hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-4 dark:bg-green-700">
+		<button class="justify-self-right" on:click={handleConnectWallet} > Connect </button>
+		<button class="justify-self-right" on:click={getNumber} > Get Number </button>
+		<button class="justify-self-right" on:click={handleIncrement} > Increment Number </button>
+		<button class="justify-self-right" on:click={handleGetArray} > Get Array </button>
+		
+		</div>	
+		<Default />
+</div>

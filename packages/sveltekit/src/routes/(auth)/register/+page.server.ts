@@ -11,7 +11,7 @@ const alphabet =
 // if the user exists, redirect authenticated users to the profile page
 export async function load({ locals }) {
 	const session = await locals.auth.validate()
-	if (session) throw redirect(302, '/')
+	if (session) throw redirect(302, '/home')
 
 	// always return `form` in load and form actions
 	const form = await superValidate(authSchema)
@@ -49,5 +49,7 @@ export const actions = {
 			console.log(error)
 			return setError(form, 'username', 'Username already in use')
 		}
+		throw redirect(302, '/login')
+
 	},
 }
