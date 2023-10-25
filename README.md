@@ -32,3 +32,5 @@ pnpm dev
 ```
 
 Goto the website and signup and signin. You will see buttons for Connect etc corresponding to functions from packages/foundry/src/Counter.sol.
+
+Happy coding!
