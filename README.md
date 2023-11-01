@@ -30,8 +30,11 @@ pnpm anvil
 The last command above creates a local blockchain with a chain-id 1337. This command will also output 10 accounts and their corresponding private keys. 
 
 In a seperate window or using your IDE create the file packages/foundry/.env and add the following two entries:
+
+```
 PRIVATE_KEY="0x..."
 RPC_URL="http://127.0.0.1:8545"
+```
 
 Replace "0x..." above with a private key from the output of anvil.
 
