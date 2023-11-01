@@ -18,10 +18,10 @@
 		This project grew out of initial code from Sveltekit Enterprise Stack and is inspired by scaffold-eth-2.
 	</span>
 	<span class="my-2 block max-w-3xl text-2xl text-gray-400">
-		All the routes that require a valid session are placed under src/routes/\(authenticated\).
+		All the routes that require a valid session are placed under src/routes/(authenticated).
 	</span>
 	<span class="my-2 block max-w-3xl text-2xl text-gray-400">
-		Routes that manage session (/register, /login, /logout) are under src/routes/\(auth\).
+		Routes that manage session (/register, /login, /logout) are under src/routes/(auth).
 	</span>
 	<span class="my-2 block max-w-3xl text-2xl text-gray-400">
 		The default route (/) is under /src/routes/.
