@@ -1,4 +1,4 @@
-# The SvelteKit Enterprise Stack
+# The SvelteKit Enterprise Stack Modifications
 
 For our web2 portion, we started with the Sveltekit Enterprise Stack and upgraded dependent packages and adjusted the Stack to account for breaking changes in the dependencies.
 

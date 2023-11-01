@@ -55,5 +55,8 @@
 		"lucide-svelte": "^0.284.0",
 		"stripe": "^13.8.0",
 		"vite-plugin-tailwind-purgecss": "^0.1.3"
-	}
+	},
+	"keywords": ["web3", "sveltekit", "foundry", "pnpm", "workspaces", "mono repo"],
+	"author": "Beddhu Murali",
+	"license": "BSD 3-Clause License"  
 }

@@ -10,19 +10,20 @@
     "foundry_install": "curl -L https://foundry.paradigm.xyz | bash",
     "forge_init": "forge init --force && cp contracts/* src && rm -rf contracts",
     "build": "forge build && pnpm buildjs",
-    "createCounter": "forge create --rpc-url http://127.0.0.1:8545 --private-key <add private key from anvil output> src/Counter.sol:Counter",
+    "create": "node create.js ",
     "test": "forge test",
     "anvil": "anvil --chain-id 1337",
     "buildjs": "rm -rf dist && node index.js "
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "@typechain/ethers-v6": "^0.5.0",
+    "dotenv": "^16.3.1",
     "typechain": "^8.3.1"
-  }
+  },
+  "keywords": ["web3", "sveltekit", "foundry", "pnpm", "workspaces", "mono repo"],
+  "author": "Beddhu Murali",
+  "license": "BSD 3-Clause License"
 }
