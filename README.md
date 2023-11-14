@@ -27,14 +27,16 @@ pnpm forge:init
 pnpm forge:build
 pnpm anvil
 ```
-**Error while running init**: If you get an error while running the init function, you must need to setup github name and email. You don't have to provide your actual info. You can do the following:
+---
+**Error while running `pnpm forge:init`**: If you get an error while running the init function, you must need to setup github name and email. You don't have to provide your actual info. You can do the following:
 
 ```bash
 git config user.name test
 git config user.email test@test.com
 ```
+---
 
-The last command above creates a local blockchain with a chain-id 1337. This command will also output 10 accounts and their corresponding private keys. 
+The last command above (`pnpm anvil`) creates a local blockchain with a chain-id 1337. This command will also output 10 accounts and their corresponding private keys. 
 
 In a seperate window or using your IDE create the file packages/foundry/.env and add the following two entries:
 
