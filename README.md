@@ -21,10 +21,17 @@ pnpm foundry:install
 
 Follow the output of the last command to complete the installation of foundry. Essentially, this involves running the command foundryup. Then, run:
 
-```
+```bash
+# Note: If you get an error when running init, see below.
 pnpm forge:init
 pnpm forge:build
 pnpm anvil
+```
+**Error while running init**: If you get an error while running the init function, you must need to setup github name and email. You don't have to provide your actual info. You can do the following:
+
+```bash
+git config user.name test
+git config user.email test@test.com
 ```
 
 The last command above creates a local blockchain with a chain-id 1337. This command will also output 10 accounts and their corresponding private keys. 
