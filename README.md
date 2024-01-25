@@ -31,7 +31,7 @@ pnpm forge:build
 pnpm anvil
 ```
 ---
-**Error while running `pnpm forge:init`**: If you get an error while running the init function, you must need to setup github name and email. You don't have to provide your actual info. You can do the following:
+**Error while running `pnpm forge:init`**: If you get an error while running the init function, you need to setup github name and email. Temporarily, you could do the following:
 
 ```bash
 git config user.name test
