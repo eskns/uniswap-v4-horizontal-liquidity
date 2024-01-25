@@ -1,9 +1,12 @@
-# web3-sveltekit-bundle
-Universal web app with traditional and blockchain based backends.
+# uniswap-v4-horizontal-liquidity
+Uniswap-v4 is an exciting new development in the DeFi sector of the Ethereum ecosystem. It is still under development. Draft versions of the codebase is available on github.
 
-This project is intended to help anyone starting web3 development to have a better developer experience.
+We are excited about their singleton architecture for holding all pools, and their new features like hooks and flash accounting. We have highlighted the [possibilities V4 opens up for liquidity providers](https://www.linkedin.com/posts/essential-knowledge-systems-llc_defi-horizontal-and-vertical-liquidity-activity-7152029239293136896-GBXx) on LinkedIn. 
 
-One advantage of this package is you can store sensitive data in .env files. The included .gitignore file will exclude the .env files from being uploaded to online repositories.
+This repo is under development and, when completed, it will provide LPs the capabilities to perform what-if scenarios before changing their positions on one or more of their pools using their browsers. Once satisfied they can interact with our hooks contracts on the Ethereum blockchain to adjust their positions horizontally and vertically. 
+
+## For developers
+One advantage of using this package is that you can store sensitive data in .env files. The included .gitignore file will exclude the .env files from being uploaded to online repositories.
 
 packages/foundry/create.js uses your private key from packages/foundry/.env to deploy your contract(s) to anvil.
 
